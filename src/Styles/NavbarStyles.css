@@ -1,0 +1,73 @@
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.nav-text{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-text .link, .drop-link{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+/* hover over nav text*/
+.link:hover, .dropbtn:hover{
+   color: green;
+}
+/* active page */
+.nav-text .active{
+     padding: 21px;  
+    background-color: green;
+    color: white;
+}
+/* dropdown active navlinks */
+.nav-text .drop-link.active{
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+/* about us navlink */
+.dropbtn{
+    display: block;
+    color: white;
+    padding: 21px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown{
+    padding: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    min-width: 160px;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu a:hover{
+    background-color: green;
+}
+
