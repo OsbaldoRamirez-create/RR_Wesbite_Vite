@@ -1,0 +1,40 @@
+footer{
+    margin-top: auto;
+    background-color: black;
+    text-align: center;
+    height: auto;
+    padding-top: 1rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+footer a.active{
+    color: green;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+footer p{
+    color: white;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+@media(max-width:640px){
+    footer a {
+        margin: 0 10px;
+    }
+}
+
+@media(max-width:400px){
+    footer a {
+        margin: 0 5px;
+    }
+}
