@@ -19,6 +19,7 @@ nav{
     padding: 10px;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 /* hover over nav text*/
 .link:hover, .dropbtn:hover{
