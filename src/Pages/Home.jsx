@@ -47,7 +47,7 @@ export default function Home() {
             <div className="info-box">
                 <img src ={patioImg }alt = "Landscaping Services"/>    
             </div>
-            <NavLink className="btn-link" to="/Landscaping"> More</NavLink>
+                <NavLink className="btn-link" to="/landscaping"> More</NavLink>
         </div>
         
     </div>
