@@ -1,0 +1,76 @@
+.main-landscaping{
+    display: grid;
+    justify-content: center;
+}
+.landscaping-info{
+    width: 950px;
+    margin: 30px auto;
+}
+.main-landscaping > h1{
+    color: darkgreen;
+    font-size: 50px;
+    margin-top: auto;
+    justify-self: center;
+}
+.landscaping-info h3{
+    color: darkgreen;
+    font-size: 40px;
+    margin: 20px auto;
+    width: fit-content;
+}
+.landscaping-info p{
+    text-align: justify;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 23px;
+    line-height: 33px;
+    color: black;
+}
+
+.landscaping-services{
+    display:block;
+    margin: auto;
+    padding: 30px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    width: 820px;
+}
+
+.landscaping-services h2{
+    color: darkgreen;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    justify-self: center;
+}
+@media(max-width: 860px){
+    .landscaping-info{
+        width: 700px;
+    }
+    .landscaping-services{
+        width: 700px;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width:640px){
+    .landscaping-info{
+        width: 400px;
+    }
+    .landscaping-info p{
+        font-size: 19px;
+    }
+    .landscaping-services{
+        width: 400px;
+        padding: 20px 10px;
+    }
+}
+
+@media(max-width:400px){
+    .landscaping-info{
+        width: 320px;
+    }
+    .landscaping-services{
+        width: 320px;
+        padding: 20px 10px;
+    }
+}
