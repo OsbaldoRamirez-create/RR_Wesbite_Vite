@@ -1,0 +1,110 @@
+
+.about-container{
+    display: grid;
+    justify-content: center;
+}
+/* Apply only to immediate h1 child of about container*/
+.about-container > h1{
+    color: darkgreen;
+    font-size: 50px;
+    margin-top:auto;
+    justify-self: center;}
+
+.about-info{ 
+    margin: auto;
+    max-width: 850px;
+    padding-bottom: 50px;
+}
+.about-info p{
+    text-align: justify;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 23px;  
+    line-height: 33px; 
+    color: black;
+}
+.about-info h2{
+    color: darkgreen;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    justify-self: center;
+}
+
+.services-container{
+    display:block;
+    margin: auto;
+    padding: 20px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    width: 800px;
+}
+.services-container h2{
+    color: darkgreen;
+    font-size: 30px;
+    margin: 20px 0;
+    justify-self: center;
+}
+.services ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    color: black;
+}
+
+.services li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+    font-size: 22px;
+    height: 50px;
+    text-align: left;
+}
+
+.services li::after{
+    content: '✓';
+    color: green;
+    position: relative;
+    width: 20px;
+    text-align: center;
+}
+@media(max-width:860px){
+    .about-info{
+        width: 650px;
+    }
+    .services-container{
+        width: 650px;
+    }
+
+}
+
+@media(max-width:700px){
+    .about-info{
+        width: 400px;
+    }
+    .services-container{
+        width: 400px;
+        padding: 10px;
+    }
+    .services li{
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+@media(max-width:400px){
+    .about-info{
+        width: 320px;
+    }
+    .services-container{
+        width: 320px;
+        padding: 8px;
+    }
+    .services li{
+        font-size: 12px;
+    }
+}
