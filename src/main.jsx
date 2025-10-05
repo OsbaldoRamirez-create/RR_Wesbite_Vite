@@ -7,6 +7,7 @@ import Home from './Pages/Home.jsx'
 import Footer from './Components/Footer.jsx'
 import Landscaping from './Pages/Landscaping.jsx'
 import About from './Pages/About.jsx'
+import MaintenancePage from './Pages/Maintenance.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home/>} />
         <Route path="/landscaping" element={<Landscaping/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/maintenance" element={<MaintenancePage />} />
         {/* add other routes here, e.g. /about, /contact, /maintenance */}
       </Routes>
       <Footer />
