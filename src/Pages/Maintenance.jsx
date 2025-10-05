@@ -1,5 +1,5 @@
 import '../Styles/MaintenanceStyles.css';
-import RamirezLogo from '../assets/RamirezLogo.png';
+import RamirezLogo from '../assets/RRLogoo.png';
 import Quote from '../Components/Quote';
 import Slideshow from '../Components/Slideshow';
 import { yardImages2 } from '../Components/slideImages';

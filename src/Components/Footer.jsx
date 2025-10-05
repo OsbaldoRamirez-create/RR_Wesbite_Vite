@@ -8,7 +8,7 @@ export default function FooterBar() {
         <NavLink to="/about">About</NavLink>
         {/* <NavLink to="/services">Services</NavLink> */}
         <NavLink to="/contact">Contact us</NavLink>
-        <p>© Copyright by Ramirez Landscaping</p>
+        <p>© Copyright by Ramirez Reyes Landscaping</p>
     </footer>
   )
 }

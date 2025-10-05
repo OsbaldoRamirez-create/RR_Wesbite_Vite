@@ -1,7 +1,7 @@
 import Quote from '../Components/Quote'
 /* import Slideshow from './Components/Slideshow' */
 import '../Styles/AboutStyles.css';
-import RamirezLogo from '../assets/RamirezLogo.png' 
+import RamirezLogo from '../assets/RRLogoo.png' 
 /* import {yardImages2} from './Components/SlideImages'; */
 import BeforeAfterSlider from '../Components/BeforeAfterSlider';
 import before from '../assets/BeforeAcImg.jpg';
