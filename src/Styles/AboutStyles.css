@@ -44,6 +44,7 @@
     margin: 20px 0;
     justify-self: center;
 }
+/* Controls for landscaping page .services */
 .services ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
