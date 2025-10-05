@@ -1,4 +1,4 @@
-import RamirezLogo from '../assets/RamirezLogo.png';
+import RamirezLogo from '../assets/RRLogoo.png';
 import grassImg from '../assets/NewGrass2.png';
 import patioImg from '../assets/cleanerPatio.png';
 import '../Styles/HomeStyles.css';
