@@ -1,0 +1,49 @@
+.contact-container{
+   display: grid;
+   justify-content: center;
+}
+.contact-container > h1{
+    color: darkgreen;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    justify-self: center;
+}
+.contact-intro{
+    margin: auto;
+    max-width: 850px;
+
+}
+.contact-intro h2{
+    color: darkgreen;
+    font-size: 45px;
+    margin: 20px auto;
+    justify-self: center;
+}
+
+.contact-intro p{
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: justify;
+    font-size: 23px;
+    line-height: 33px;
+    color: black;
+}
+
+@media(max-width:860px){
+    .contact-intro{
+        max-width: 700px;
+    }
+}
+
+@media(max-width:640px){
+    .contact-intro{
+        padding: 10px;
+    }
+    
+    .contact-intro h2{
+        margin: 30px 10px;
+    }
+    .contact-intro p{
+        font-size: 19px;
+    }
+}
