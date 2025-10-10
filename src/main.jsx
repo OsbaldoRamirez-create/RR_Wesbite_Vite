@@ -9,6 +9,7 @@ import Landscaping from './Pages/Landscaping.jsx'
 import About from './Pages/About.jsx'
 import MaintenancePage from './Pages/Maintenance.jsx'
 import ContactPage from './Pages/Contact.jsx'
+import Gallery from './Pages/Gallery.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/landscaping" element={<Landscaping/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/maintenance" element={<MaintenancePage />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<ContactPage />} />
         {/* add other routes here, e.g. /about, /contact, /maintenance */}
       </Routes>
