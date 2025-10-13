@@ -9,13 +9,19 @@ import image8 from "../assets/Mulch.jpg";
 import image9 from "../assets/Patio.jpg";
 import image10 from "../assets/CleanTree.jpg";
 import image11 from "../assets/frontLawn.png";
-import image12 from "../assets/fountainPlants.png";
+import image12 from "../assets/LA_Fountain.png";
 import image13 from "../assets/frontFence.png";
 import image14 from "../assets/LAS_Back.png";
 import image15 from "../assets/SCT_Front.png";
 import image16 from "../assets/planterBox.png";
 import image17 from "../assets/MPA_Roses.png";
 import image18 from "../assets/frontMulch.png";
+import image19 from "../assets/PacificaLawn.png";
+import image20 from "../assets/parkBark.png";
+import image21 from "../assets/RWC_PebbleWW.png";
+import image22 from "../assets/RWCLawn.png";
+import image23 from "../assets/weedCleanup.png";
+import image24 from "../assets/PA_Powerwash.png";
 
 export const yardImages = [{src: image1, alt:"Front Yard Slabs", text:"Rocks Slabs Landscape"},
 {src: image2, alt:"Retaining wall", text:"Retaining Wall and Artifical Lawn"},
@@ -52,6 +58,12 @@ export const allImages = [
     {src: image16, alt:"Planter Box", text:"Custom Wooden Planter Box", category: "Landscaping"},
     {src: image17, alt:"Roses", text:"Beautiful Rose Bushes", category: "Maintenance"},
     {src: image18, alt:"Front Mulch", text:"Fresh Mulch and Clean-Up", category: "Maintenance"},
+    {src: image19, alt:"Pacifica Lawn", text:"Lush Lawn in Pacifica", category: "Landscaping"},
+    {src: image20, alt:"Park Bark", text:"Park Area with Fresh Bark", category: "Landscaping"},
+    {src: image21, alt:"RWC Pebble Walkway", text:"Pebble Stone Walkway", category: "Pavers"},
+    {src: image22, alt:"RWC Lawn", text:"Lush Green Lawn", category: "Maintenance"},
+    {src: image23, alt:"Weed Cleanup", text:"Thorough Weed Cleanup", category: "Landscaping"},
+    {src: image24, alt:"Power Washing", text:"Driveway Power Washing", category: "Landscaping"},
 
 
 
