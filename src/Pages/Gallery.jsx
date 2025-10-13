@@ -32,8 +32,9 @@ const handleFilterChange = (filter) => {
   setCurrentPage(1);
 };
 
-  return (
-    <div className="gallery-container">
+    return (
+        <div className="gallery-outer">
+            <div className="gallery-container">
         <div className="filter-buttons">
             {filters.map((filter) => (
                 <button key={filter} 
@@ -60,6 +61,7 @@ const handleFilterChange = (filter) => {
                 <button onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
             )}
         </div>
-    </div>
+            </div>
+        </div>
   );
 }
