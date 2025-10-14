@@ -6,11 +6,6 @@ import { allImages } from "../Components/slideImages";
 
 export default function Gallery() {
 
-    /* const allImages = [
-        { src: 'image1.jpg', category: 'Landscaping' },
-        { src: 'image2.jpg', category: 'Maintenance' },
-    ];
- */
 const filters = ['All', 'Landscaping', 'Maintenance', 'Tree', 'Fence', 'Pavers'];
 const [activeFilter, setActiveFilter] = useState('All');
 const [currentPage, setCurrentPage] = useState(1);
@@ -54,12 +49,21 @@ const handleFilterChange = (filter) => {
     </div>
     {/* pagination controls */}
         <div className="pagination">
-            {currentPage > 1 && (
-                <button onClick={() => setCurrentPage(currentPage - 1)}>Previous</button>
-            )}
-            {currentPage < totalPages && (
-                <button onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
-            )}
+        {/*gets previous page number */}
+            <button onClick={() => setCurrentPage((p) => Math.max(1, p - 1))} disabled={currentPage === 1}>Previous</button>
+
+            {/* calculate page numbers based on total pages */}
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
+                <button
+                    key={num}
+                    className={num === currentPage ? 'page-number active' : 'page-number'}
+                    onClick={() => setCurrentPage(num)}
+                >
+                    {num}
+                </button>
+            ))}
+            {/*gets next page number */}
+            <button onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))} disabled={currentPage === totalPages}>Next</button>
         </div>
             </div>
         </div>
