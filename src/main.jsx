@@ -10,11 +10,13 @@ import About from './Pages/About.jsx'
 import MaintenancePage from './Pages/Maintenance.jsx'
 import ContactPage from './Pages/Contact.jsx'
 import Gallery from './Pages/Gallery.jsx'
+import ScrollToTop from './Components/ScrollToTop.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/landscaping" element={<Landscaping/>} />
