@@ -4,8 +4,8 @@ import '../Styles/AboutStyles.css';
 import RamirezLogo from '../assets/RRLogoo.png' 
 /* import {yardImages2} from './Components/SlideImages'; */
 import BeforeAfterSlider from '../Components/BeforeAfterSlider';
-import before from '../assets/BeforeAcImg.jpg';
-import after from '../assets/AfterAcImg.jpg';
+import before from '../assets/BeforePALawn.png';
+import after from '../assets/AfterPALawn.png';
 
 export default function About() {
   return (
