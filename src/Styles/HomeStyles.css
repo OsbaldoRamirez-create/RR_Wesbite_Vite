@@ -19,13 +19,15 @@
     gap: 150px;
 }
 .intro-boxes{
-    width: 470px;
+    background: linear-gradient(140deg, hsla(0, 0%, 100%, .459) 5%, #0000 70%);
+    border: 1px solid #ccc;
+    border-radius: 60px;
     padding: 20px;
-    border-radius: 8px;
+    width: 600px;
 }
 .intro-boxes h2{
     margin: 0;
-    color: darkgreen;
+    color: #2e4b2e;
     font-size: 40px;
 }
 
@@ -34,35 +36,32 @@
     text-align: center;
 }
 .intro-boxes p{
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 40px;
     text-align: justify;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 24px;
-    color: black;
 }
 .content{
-    display: flex;
-    gap: 16.5rem;
-    justify-content: center;
     align-items: flex-start;
+    display: flex;
+    gap: 27.5rem;
+    justify-content: center;
 }
 .boxes-container{
-    width: 250px;
     height: auto;
-
-    /* center contents (h3, button) inside this column */
-    text-align: center;
 }
 
 .boxes-container h3{
-    color: darkgreen;
-    font-size: 35px;
+    color: #2e4b2e;
+    font-family: Georgia, serif;
+    font-size: 45px;
 }
 
 
 .boxes-container .btn-link{
     display: inline-block;
     padding: 10px 20px;
-    background-color: green;
+    background-color: #2e4b2e;
     text-decoration: none;
     color: white;
     border: none;
@@ -74,7 +73,7 @@
 }
 .boxes-container .btn-link:hover, .btn-container button:hover{
     background-color: white;
-    color: green;
+    color: #2e4b2e;
 }
 .info-box{
     width: 100%;
@@ -84,7 +83,7 @@
 
 .info-box img{
     width: 100%;
-    height: 200px; /*fixed hight for both images*/
+    height: 220px; /*fixed hight for both images*/
     border-radius: 10px;
     display: block;
 

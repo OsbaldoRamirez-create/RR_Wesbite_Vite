@@ -23,18 +23,18 @@ nav{
 }
 /* hover over nav text*/
 .link:hover, .dropbtn:hover{
-   color: green;
+   color: #447144;
 }
 /* active page */
 .nav-text .active{
      padding: 21px;  
-    background-color: green;
+    background-color: #447144;
     color: white;
 }
 /* dropdown active navlinks */
 .nav-text .drop-link.active{
     padding: 10px;
-    background-color: green;
+    background-color: #447144;
     color: white;
 }
 
@@ -69,6 +69,6 @@ nav{
 }
 
 .dropdown-menu a:hover{
-    background-color: green;
+    background-color: #447144;
 }
 

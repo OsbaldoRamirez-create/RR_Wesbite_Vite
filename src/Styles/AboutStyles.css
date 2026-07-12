@@ -5,65 +5,65 @@
 }
 /* Apply only to immediate h1 child of about container*/
 .about-container > h1{
-    color: darkgreen;
+   color: #2e4b2e;
     font-size: 50px;
-    margin-top:auto;
-    justify-self: center;}
+    margin-bottom: 50px;
+    margin-top: auto;
+}
 
 .about-info{ 
     margin: auto;
-    max-width: 850px;
+    width: 1100px;
     padding-bottom: 50px;
 }
 .about-info p{
     text-align: justify;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 23px;  
-    line-height: 33px; 
-    color: black;
+    font-family: Georgia, serif;
+    font-size: 22px;  
+    line-height: 40px; 
 }
 .about-info h2{
-    color: darkgreen;
-    font-size: 40px;
-    margin-top: 40px;
+    color: #2E4B2E;
+    font-size: 50px;
     margin-bottom: 0px;
-    justify-self: center;
 }
 
 .services-container{
     display:block;
     margin: auto;
-    padding: 20px;
-    background-color: #e5e5e5;
+    padding: 60px;
+    background-color: #e5e5e53b;
     border: 1px solid #ccc;
-    width: 800px;
+    border-radius: 20px;
+    width: 950px;
 }
 .services-container h2{
-    color: darkgreen;
-    font-size: 30px;
-    margin: 20px 0;
-    justify-self: center;
+    color: #2E4B2E;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 50px; 
 }
 /* Controls for landscaping page .services */
 .services ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     list-style-type: none;
     padding: 0;
-    color: black;
 }
 
 .services li {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    position: relative;
-    font-size: 22px;
+    background-color: #ffffff42;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: flex;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size: 21px;
     height: 50px;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
     text-align: left;
 }
 

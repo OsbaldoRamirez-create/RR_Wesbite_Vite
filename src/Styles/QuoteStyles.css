@@ -4,8 +4,9 @@
     align-items: center;
 }
 .quote-container h1{
-    font-size: 40px;
-    color: darkgreen;
+    font-size: 50px;
+    color: #2e4b2e;
+    font-family: Georgia, serif
 }
 
 #landscaping-form {
@@ -24,10 +25,10 @@
     
 }
 .input-container h4 {
-    color: blue;
+    color: white;
     text-align: left;
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .btn-container{
@@ -38,7 +39,7 @@
 }
 .btn-container button{
     width: 150px;
-    background-color: green;
+    background-color: #2e4b2e;
     border: none;
     color: white;
     border-radius: 5px;
