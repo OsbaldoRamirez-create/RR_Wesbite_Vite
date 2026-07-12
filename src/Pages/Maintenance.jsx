@@ -12,12 +12,12 @@ export default function MaintenancePage() {
         <div className='maintenance-info'>
             <h3>We Take Care Of All Yards </h3>
             <p>
-                At Ramirez Landscaping, we offer a variety of services to help you maintain your yard whether 
+                At Ramirez Reyes Landscaping, we offer a variety of services to help you maintain your yard whether 
                 it's weekly, bi-weekly, or monthly. Our team is committed to enhancing the beauty of your 
                 outdoor spaces, ensuring that each visit leaves your property looking pristine and well-kept.
                 We treat every yard as it if were our own, taking pride in our attention to detail. 
                 Utilizing the best equipment and latest techniques, we care for your yard efficiently and effectively. 
-                With Ramirez Landscaping, you receive not just a service provider, but a dedicated partner
+                With our family, you receive not just a service provider, but a dedicated partner
                 who values your satisfaction and the health of your landscape. Hire us today and experience the difference we can make!
                 Let our family maintain your yard, so you can enjoy your beautiful garden without the hassle.
             </p>
@@ -40,7 +40,7 @@ export default function MaintenancePage() {
         </div>
         <div className='service-area'>
             <h2> Service Area</h2>
-            <p> Ramirez Landscaping serves clients throughout the West,
+            <p> We serve clients throughout the West,
                 East and South Bay area, including the following communities and all areas in between</p>
             <ul>
                 <li>Redwood City</li>
@@ -53,7 +53,7 @@ export default function MaintenancePage() {
                 <li>Belmont</li>
                 <li>Portola Valley</li>
                 <li>Palo Alto</li>
-                <li>Atherton</li>
+                <li>Saratoga</li>
                 <li>Campbell</li>
             </ul>
         </div>
