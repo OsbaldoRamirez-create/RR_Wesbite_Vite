@@ -69,7 +69,7 @@
 
 .services li::after{
     content: '✓';
-    color: green;
+    color: #447144;
     position: relative;
     width: 20px;
     text-align: center;

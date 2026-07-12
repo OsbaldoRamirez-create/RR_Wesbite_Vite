@@ -3,30 +3,29 @@
    justify-content: center;
 }
 .contact-container > h1{
-    color: darkgreen;
+    color: #2E4B2E;
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 50px;
-    justify-self: center;
+    font-family: georgia,serif;
 }
 .contact-intro{
     margin: auto;
-    max-width: 850px;
+    max-width: 1100px;
 
 }
 .contact-intro h2{
-    color: darkgreen;
+    color: #2E4B2E;
     font-size: 45px;
     margin: 20px auto;
     justify-self: center;
 }
 
 .contact-intro p{
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: Georgia, serif;
     text-align: justify;
-    font-size: 23px;
-    line-height: 33px;
-    color: black;
+    font-size: 22px;
+    line-height: 40px;
 }
 
 @media(max-width:860px){

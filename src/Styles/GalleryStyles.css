@@ -7,17 +7,25 @@
 
 .gallery-container {
     display: grid;
-    color: black;
+    width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 20px;
     box-sizing: border-box; /* ensure padding doesn't exceed max-width */
 }
+.gallery-container >h1{
+    color: #2E4B2E;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: georgia,serif;
+    text-align: center;
+}
+
 
 .filter-buttons{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 .filter-buttons button{
     background-color: #f0f0f0;
@@ -31,13 +39,13 @@
     transition: background-color 0.3s;
 }
 .filter-buttons button.active{
-    background-color: green;
+    background-color: #447144;
     color: white;
     border-color: #00aaff;
 }
 
 .filter-buttons button:hover{
-    background-color: green;
+    background-color: #447144;
     color: white;
 }
 
@@ -49,7 +57,7 @@
     align-items: center;
 }
 .image-grid img{
-    width: 280px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
@@ -73,7 +81,7 @@
     transition: background-color 0.3s;
 }
 .pagination button:hover{
-     background-color: green;
+     background-color: #447144;
      color: white;
 }
 
@@ -83,23 +91,17 @@
 }
 
 .page-number.active{
-    background-color: green;
+    background-color: #447144;
     color: white;
-    border-color: green;
+    border-color: white;
 }
 
-@media(max-width:1024px){
-    .image-grid{ grid-template-columns: repeat(4, 1fr) }
-}
-@media(max-width:768px){
-    .image-grid{ grid-template-columns: repeat(2, 1fr) }
-}
 
 /* modal / lightbox styles */
 .gallery-modal-overlay{
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.75);
+    background: #2e4b2eb6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,8 +109,7 @@
 }
 .gallery-modal{
     position: relative;
-    max-width: 720px;
-    width: calc(100% - 40px);
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,6 +117,8 @@
 .gallery-modal img{ 
     border-radius:6px; 
     display:block; 
+    width:1000px;
+    height:600px;
 }
 
 .modal-close{
@@ -170,3 +173,62 @@
   .modal-next{ right: 8px }
 }
 
+
+@media(max-width:1600px){
+    
+    .image-grid{ 
+        grid-template-columns: repeat(4, 1fr) 
+    }
+}
+@media(max-width:880px){
+    .image-grid{ 
+        grid-template-columns: repeat(3, 1fr) 
+    }
+    .image-grid img{
+        width: 100%;
+        height: 200px;
+    }
+    .gallery-modal img{
+        width: 500px;
+        height: auto;
+    }
+}
+@media(max-width:650px){
+    .ramirezLogo{
+        width:300px;
+    }
+    .filter-buttons{
+        flex-wrap: wrap;
+    }
+    .filter-buttons button{
+        margin-bottom: 10px;
+    }
+    .image-grid{ 
+        grid-template-columns: repeat(2, 1fr) 
+    }
+    .gallery-modal img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width:480px){
+    .filter-buttons{
+        flex-wrap: wrap;
+    }
+    .filter-buttons button{
+        margin-bottom: 10px;
+    }
+    .image-grid{ 
+        grid-template-columns: repeat(2, 1fr) 
+    }
+    .gallery-modal img{
+        width:100%;
+        height:auto;
+    }
+}
+ 
+@media(max-width:360px){
+    .image-grid{ 
+        grid-template-columns: repeat(2, 1fr) }
+}

@@ -5,18 +5,18 @@
 }
 
 .maintenance-container > h1{
-    color: darkgreen;
+    color: #2e4b2e;
     font-size: 50px;
     margin-top: auto;
     justify-self: center;
 }
 
 .maintenance-info{
-    max-width: 900px;
+    max-width: 1100px;
     margin: 20px auto;
 }
 .maintenance-info h3{
-    color: darkgreen;
+    color: #2e4b2e;
     font-size: 40px;
     margin: 20px auto;
     width: fit-content;
@@ -24,23 +24,24 @@
 }
 
 .maintenance-info p{
-    font-size: 23px;
-    font-family: "Trebuchet MS", sans-serif;
+    font-size: 22px;
+    font-family: Georgia, serif;
     text-align: justify;
-    line-height: 33px;
+    line-height: 40px;
 }
 
 .maintenance-services{
-    display:block;
-    margin: auto;
-    padding: 40px;
-    background-color: #e5e5e5;
+    background-color: #e5e5e53b;
     border: 1px solid #ccc;
-    max-width: 700px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    max-width: 950px;
+    padding: 65px;
 }
 .maintenance-services h2{
-    color: darkgreen;
-    font-size: 30px;
+    color: #2e4b2e;
+    font-size: 40px;
     margin-top: auto;
     justify-self: center;
 
@@ -49,46 +50,49 @@
 .yard-services ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .yard-services li {
-    display: flex;
-    text-align: left;
     align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px;
+    background-color: #ffffff42;
     border: 1px solid #ddd;
+    border-radius: 15px;
     box-sizing: border-box;
-    height: 70px;   
-    font-size: 20px;
+    display: flex;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size: 21px;
+    height: 70px;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: left;
 }
 .yard-services li::after{
     content: '✓';
-    color: green;
+    color: #447144;
     position: relative;
 }
 
 .service-area{
-    max-width: 1000px;
-    margin: 50px auto;
-    text-align: center;
-    padding: 0px 40px 20px 40px;
-    background-color: #e5e5e5;
+    background-color: #e5e5e53b;
     border: 1px solid #ccc;
-
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 0 40px 80px;
+    text-align: center;
 }
 
 .service-area h2{
-    font-size: 30px;
-    color: darkgreen;
+    font-size: 40px;
+    color: #2e4b2e;
+    margin: auto ;
 }
 .service-area p{
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 40px;;
 }
 .service-area ul{
@@ -111,7 +115,7 @@
     position: absolute;
     left: 0;
     content: '•';
-    color: green;
+    color: #447144;
     margin-right: 10px;
 }
 @media(max-width:860px){
@@ -138,14 +142,18 @@
     }
     .maintenance-services{
         width: 400px;
-        padding: 30px 0;
+        padding: 30px 10px;
     }
+    .maintenance-services h2{
+        font-size: 35px;
+    }
+
     .yard-services li{
         font-size: 16px;
     }
     .service-area{
         width: 400px;
-        padding: 0px 0px 40px 0px;
+        padding: 40px 10px;
     }
     .service-area p{
         font-size: 17px;
@@ -157,6 +165,7 @@
     }
     .service-area li{
         font-size: 16px;
+        padding: 5px;
     }
 }
 
