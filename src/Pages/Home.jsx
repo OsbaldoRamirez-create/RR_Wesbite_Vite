@@ -1,4 +1,3 @@
-import RamirezLogo from '../assets/RRLogoo.png';
 import grassImg from '../assets/NewGrass2.png';
 import patioImg from '../assets/cleanerPatio.png';
 import '../Styles/HomeStyles.css';
@@ -10,7 +9,6 @@ import {yardImages} from '../Components/slideImages';
 export default function Home() {
   return (
     <div className='main-home'> 
-        <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
         <Slideshow images={yardImages}/>
         <div className="intro">
         <div className="intro-boxes">

@@ -1,5 +1,4 @@
 import '../Styles/MaintenanceStyles.css';
-import RamirezLogo from '../assets/RRLogoo.png';
 import Quote from '../Components/Quote';
 import Slideshow from '../Components/Slideshow';
 import { yardImages2 } from '../Components/slideImages';
@@ -7,7 +6,6 @@ import { yardImages2 } from '../Components/slideImages';
 export default function MaintenancePage() {
   return (
     <div className='maintenance-container'>
-        <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
         <h1>Maintenance Services</h1>
 
         <Slideshow images={yardImages2}/>    

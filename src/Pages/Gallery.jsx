@@ -1,7 +1,7 @@
 import "../Styles/GalleryStyles.css";
-import RamirezLogo from '../assets/RRLogoo.png';
 import { useState, useEffect } from "react";
 import { allImages } from "../Components/slideImages";
+import Quote from "../Components/Quote";
 
 
 
@@ -47,7 +47,9 @@ const handleFilterChange = (filter) => {
         <div className="gallery-outer">   
         <div className="gallery-container">
 
-        <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
+        <h1>View our beautiful work</h1>
+
+
         <div className="filter-buttons">
             {filters.map((filter) => (
                 <button key={filter} 
@@ -64,7 +66,13 @@ const handleFilterChange = (filter) => {
         {pagedImages.map((img, index) => {
             const globalIndex = (currentPage - 1) * imagesPerPage + index
             return (
-            <img key={index} src={img.src} alt={img.category} onClick={() => { setLightboxIndex(globalIndex); setLightboxOpen(true) }} style={{ cursor: 'pointer' }} />
+            <img key={index} 
+            src={img.src} 
+            alt={img.category} 
+            onClick={() => { 
+                setLightboxIndex(globalIndex); 
+                setLightboxOpen(true) }}
+             style={{ cursor: 'pointer' }} />
         )})}
     </div>
     {/* pagination controls */}
@@ -91,11 +99,12 @@ const handleFilterChange = (filter) => {
                                 <div className="gallery-modal" onClick={e=>e.stopPropagation()}>
                                     <button className="modal-close" onClick={()=> setLightboxOpen(false)}>×</button>
                                     <button className="modal-prev" onClick={()=> setLightboxIndex(i => Math.max(0, i - 1))}>‹</button>
-                                    <img src={filteredImages[lightboxIndex].src} alt={filteredImages[lightboxIndex].category} style={{ maxWidth: '700px', width: '100%', height: 'auto' }} />
+                                    <img src={filteredImages[lightboxIndex].src} alt={filteredImages[lightboxIndex].category}/>
                                     <button className="modal-next" onClick={()=> setLightboxIndex(i => Math.min(filteredImages.length - 1, i + 1))}>›</button>
                                 </div>
                             </div>
                         )}
+                <Quote/>
                 </div>
                 </div>
     );

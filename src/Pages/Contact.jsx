@@ -1,13 +1,11 @@
 import '../Styles/ContactStyles.css';
 import Quote from '../Components/Quote'
-import RamirezLogo from '../assets/RRLogoo.png';
 import Slideshow from '../Components/Slideshow';
 import { yardImages } from '../Components/slideImages';
 
 export default function ContactPage() {
   return (
     <div className="contact-container">
-        <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
         <h1> Contact Us</h1>
         <Slideshow images={yardImages}/>
         <div className='contact-intro'>

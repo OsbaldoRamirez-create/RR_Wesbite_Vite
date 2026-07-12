@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import './Styles/index.css'
 import Navbar from './Components/Navbar.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
@@ -11,12 +11,17 @@ import MaintenancePage from './Pages/Maintenance.jsx'
 import ContactPage from './Pages/Contact.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import ScrollToTop from './Components/ScrollToTop.jsx'
+import RamirezLogo from './assets/RR_Logo.png' 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <Navbar />
       <ScrollToTop/>
+      <div className="app-container">
+      <Navbar />
+      
+      <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
+
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/landscaping" element={<Landscaping/>} />
@@ -26,7 +31,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<ContactPage />} />
         {/* add other routes here, e.g. /about, /contact, /maintenance */}
       </Routes>
-      <Footer />
+      <Footer/>
+      
+      </div>
     </BrowserRouter>
   </StrictMode>,
 )

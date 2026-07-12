@@ -1,5 +1,4 @@
 import Quote from '../Components/Quote'
-import RamirezLogo from '../assets/RRLogoo.png';
 import '../Styles/LandscapingStyles.css';
 import Slideshow from '../Components/Slideshow';
 import { yardImages } from '../Components/slideImages';
@@ -7,7 +6,6 @@ import { yardImages } from '../Components/slideImages';
 export default function LandscapingPage() {
   return (
     <div className='main-landscaping'>
-    <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
     <h1> Landscaping Services </h1>
     <Slideshow images={yardImages}/>
 

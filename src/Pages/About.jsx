@@ -1,7 +1,6 @@
 import Quote from '../Components/Quote'
 /* import Slideshow from './Components/Slideshow' */
 import '../Styles/AboutStyles.css';
-import RamirezLogo from '../assets/RRLogoo.png' 
 /* import {yardImages2} from './Components/SlideImages'; */
 import BeforeAfterSlider from '../Components/BeforeAfterSlider';
 import before from '../assets/BeforePALawn.png';
@@ -10,7 +9,6 @@ import after from '../assets/AfterPALawn.png';
 export default function About() {
   return (
     <div className="about-container">
-        <img src={RamirezLogo} alt='Ramirez Logo' className='ramirezLogo'/>
         <h1> About Us</h1>
         <BeforeAfterSlider beforeImage={before} afterImage={after}/>
         {/* <Slideshow images={yardImages2}/> */}

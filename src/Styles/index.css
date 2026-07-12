@@ -3,21 +3,25 @@
   line-height: 1.5;
   font-weight: 400;
   width: 100%;
-  color-scheme: light dark;
-  background-color: white;
+  background: linear-gradient(to bottom, #395e394b, #395e39);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 
 body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
 }
 
+.ramirezLogo{
+  width: 450px;
+  margin: auto;
+}
 
 
