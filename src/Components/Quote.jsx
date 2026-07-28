@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha';
 import '../Styles/QuoteStyles.css';
 
 export default function Quote() {
@@ -10,6 +11,8 @@ export default function Quote() {
         description: ''
     });
     const [errs, setErrs] = useState({});
+    const [captchaValue, setCaptchaValue] = useState('');
+    const recaptchaRef = useRef();
 /*     const [message, setMessages] = useState(''); */
     const validateForm = (name, value)=>{
         let newErrs = {...errs};
@@ -67,6 +70,12 @@ export default function Quote() {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if(!captchaValue){
+            alert('Please complete the reCAPTCHA');
+            return;
+        }
+
         Object.keys(formData).forEach((key)=>{
             validateForm(key, formData[key]);
         });
@@ -74,13 +83,15 @@ export default function Quote() {
             const response = await fetch('/send-quote', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(formData),
+                body: JSON.stringify({...formData, captcha_Value: captchaValue}),
             });
             const result = await response.json();
             if(response.ok){
                 alert("Your quote was sent successfully! We'll get back to you soon");
                 //clear form
                 setFormData({name: '', phone: '', email: '', subject:'', description: ''});
+                recaptchaRef.current.reset();
+                setCaptchaValue('');
             }
             else{
                 alert(result.error || 'Submission failed');
@@ -162,6 +173,15 @@ export default function Quote() {
                     required
                     className={errs.description ? 'input-error':''}></textarea>
                 </div>
+            </div>
+
+            <div className="recaptcha">
+            <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+            onChange={(value) => setCaptchaValue(value)}
+            /> 
+            
             </div>
         <div className="btn-container">
         <button type="submit"> Submit</button>

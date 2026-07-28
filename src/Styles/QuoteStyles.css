@@ -64,6 +64,15 @@
     border-color: transparent;
     background-color: lightgray;
 }
+
+.recaptcha{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .input-error{
     border-color: red !important;
 }
