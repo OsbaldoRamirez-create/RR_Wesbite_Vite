@@ -3,7 +3,7 @@ import patioImg from '../assets/cleanerPatio.png';
 import '../Styles/HomeStyles.css';
 import Slideshow from '../Components/Slideshow';
 import Quote from '../Components/Quote';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 import {yardImages} from '../Components/slideImages';
 
 export default function Home() {
