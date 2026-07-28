@@ -57,7 +57,9 @@ left: var(--divider-position); /* position handle */
     position: absolute;
     font-size: 40px;
     gap: 5px;
-    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
     display: flex;
     color: white;
     user-select: none;
