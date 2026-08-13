@@ -17,11 +17,11 @@
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "ioredis": "^6.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-google-recaptcha": "^3.1.0",
-    "react-router": "^8.3.0",
-    "redis": "^6.2.0"
+    "react-router": "^8.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
