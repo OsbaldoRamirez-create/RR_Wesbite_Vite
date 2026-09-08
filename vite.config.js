@@ -4,6 +4,18 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+
+  // Configure the development server
+  server:{
+      proxy: {
+      '/send-quote': {
+        target: 'http://localhost:3000', 
+        changeOrigin: true,
+      },
+      }
+    },
+
+
   test: {
     // The browser components and the API server need different environments,
     // so each gets its own project.
