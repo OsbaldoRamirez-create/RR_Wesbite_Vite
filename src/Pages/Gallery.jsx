@@ -66,7 +66,9 @@ const handleFilterChange = (filter) => {
         {pagedImages.map((img, index) => {
             const globalIndex = (currentPage - 1) * imagesPerPage + index
             return (
-            <img key={index} 
+            <img
+            loading="lazy" 
+            key={index} 
             src={img.src} 
             alt={img.category} 
             onClick={() => { 

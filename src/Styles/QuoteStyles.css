@@ -81,7 +81,6 @@
     color: red;
     margin: 3px;
     top: 0;
-    justify-self: anchor-center;
     transform: translateY(-120%); /* position right above input box */
 }
 

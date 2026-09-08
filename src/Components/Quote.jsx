@@ -87,7 +87,7 @@ export default function Quote() {
             });
             const result = await response.json();
             if(response.ok){
-                alert("Your quote was sent successfully! We'll get back to you soon");
+                //alert("Your quote was sent successfully! We'll get back to you soon");
                 //clear form
                 setFormData({name: '', phone: '', email: '', subject:'', description: ''});
                 recaptchaRef.current.reset();
