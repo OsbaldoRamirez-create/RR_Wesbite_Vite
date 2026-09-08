@@ -1,0 +1,20 @@
+# RR Landscaping - robots.txt
+User-agent: *
+Allow:/
+
+#block admin, private, and non-content paths
+Disallow: /admin
+Disallow: /api/
+Disallow: /server/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /thank-you
+Disallow: /success
+Disallow: /*?*
+
+#block common bot traps
+Disallow: /staging
+Disallow: /test
+
+#sitemap location
+Sitemap: https://www.rrlandscapingsv.com/sitemap.xml
