@@ -37,6 +37,15 @@ export default function BeforeAfterSlider({beforeImage, afterImage}) {
     
   };
 
+  // Function to check if the app is running locally
+const isLocal = (typeof window !== "undefined" && window.location.hostname === "localhost");
+//cloudflare image optimization
+const cfImages = (src,{width = 800, quality = 75, fit = "scale-down"}={}) => {
+    if(!src || src.startsWith("data:") || isLocal) return src; // Return the original src if it's empty or a data URL
+    const path = src.startsWith("/") ? src : `/${src}`;
+    return `/cdn-cgi/image/format=auto,quality=${quality},fit=${fit},width=${width}${path}`;
+};
+
   return (
     <div className='before-after-slider' 
     ref={containerRef} // Reference to the container for mouse events
@@ -47,9 +56,14 @@ export default function BeforeAfterSlider({beforeImage, afterImage}) {
     onTouchEnd={stopDragging}  
     style={{"--divider-position": `${dividerPosition}%`}}  // Custom property for CSS
     >
-      <img src={beforeImage} alt="Before" className='before-image' />
+      <img  src={cfImages(beforeImage, { width: 1200, quality: 80 })}
+      alt="Before"
+      className="before-image"
+      />
       <div className='after-img-div'>
-      <img src={afterImage} alt="After" className='after-image' /> 
+      <img src={cfImages(afterImage, { width: 1200, quality: 80 })} 
+      alt="After" 
+      className='after-image' /> 
       </div>
       <div className='slider-handle'
         style={{left:`${dividerPosition}%`}} // Position the handle based on the divider position
