@@ -1,5 +1,5 @@
 import "../Styles/GalleryStyles.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { allImages } from "../Components/slideImages";
 import Quote from "../Components/Quote";
 
@@ -7,6 +7,7 @@ import Quote from "../Components/Quote";
 
 export default function Gallery() {
 
+const imageGridRef = useRef(null);
 const filters = ['All', 'Landscaping', 'Maintenance', 'Tree', 'Fence', 'Pavers'];
 const [activeFilter, setActiveFilter] = useState('All');
 const [currentPage, setCurrentPage] = useState(1);
@@ -82,6 +83,11 @@ const handleFilterChange = (filter) => {
   setCurrentPage(1);
 };
 
+const goToPage = (page) => {
+    setCurrentPage(page);
+    imageGridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 const handleTouchEnd = (e) => {
     if (startTouchX === null) return;
     const endTouchX = e.changedTouches[0].clientX;
@@ -116,7 +122,7 @@ const handleTouchEnd = (e) => {
         </div>
 
     {/* image grid */}
-    <div className="image-grid">
+    <div className="image-grid" ref={imageGridRef}>
         {pagedImages.map((img, index) => {
             const globalIndex = (currentPage - 1) * imagesPerPage + index
             return (
@@ -150,20 +156,20 @@ const handleTouchEnd = (e) => {
     {/* pagination controls */}
         <div className="pagination">
         {/*gets previous page number */}
-            <button onClick={() => setCurrentPage((p) => Math.max(1, p - 1))} disabled={currentPage === 1}>Previous</button>
+            <button onClick={() => goToPage(Math.max(1, currentPage - 1))} disabled={currentPage === 1}>Previous</button>
 
             {/* calculate page numbers based on total pages */}
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
                 <button
                     key={num}
                     className={num === currentPage ? 'page-number active' : 'page-number'}
-                    onClick={() => setCurrentPage(num)}
+                    onClick={() => goToPage(num)}
                 >
                     {num}
                 </button>
             ))}
             {/*gets next page number */}
-            <button onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))} disabled={currentPage === totalPages}>Next</button>
+            <button onClick={() => goToPage(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages}>Next</button>
                 </div>
                         {/* modal */}
                         {lightboxOpen && (
