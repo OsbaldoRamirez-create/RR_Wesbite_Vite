@@ -10,7 +10,7 @@ export default function LandscapingPage() {
     <Slideshow images={yardImages}/>
 
     <div className='landscaping-info'>
-      <h3>What It Takes To Transform Your Yard </h3>
+      <h2>What It Takes To Transform Your Yard </h2>
         <p> When transforming your yard it takes a great and trustable team to complete the project as you imagined it.
             At Ramirez Landscaping, we understand that each yard is a reflection of its owner's personality and dreams.
             Thats why we commit to not only meeting your expectations but exceeding them. 
@@ -27,7 +27,7 @@ export default function LandscapingPage() {
 
     </div>
     <div className='landscaping-services'>
-            <h2> Services Offered</h2>
+            <h3> Services Offered</h3>
             <div className='services'>
                 <ul>  
                   

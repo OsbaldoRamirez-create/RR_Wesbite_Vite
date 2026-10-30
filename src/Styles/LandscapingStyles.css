@@ -7,13 +7,13 @@
     margin: 30px auto;
 }
 .main-landscaping > h1{
-    color: #2e4b2e;
+    color: #2E4B2E;
     font-size: 50px;
     margin-top: auto;
     font-family: georgia,serif;
 }
-.landscaping-info h3{
-    color: #2e4b2e;
+.landscaping-info h2{
+    color: #2E4B2E;
     font-size: 50px;
     margin: 20px auto;
     width: fit-content;
@@ -26,17 +26,17 @@
 }
 
 .landscaping-services{
-    display:block;
-    margin: auto;
-    padding: 30px;
     background-color: #e5e5e53b;
     border: 1px solid #ccc;
-    width: 900px;
     border-radius: 20px;
+    display: block;
+    margin: auto;
+    max-width: 950px;
+    padding: 65px;
 }
 
-.landscaping-services h2{
-    color: #2e4b2e;
+.landscaping-services h3{
+    color: #2E4B2E;
     font-size: 40px;
     margin-top: auto;
     margin-bottom: 40px;
@@ -57,6 +57,7 @@
     }
     .landscaping-info p{
         font-size: 19px;
+        line-height: 35px;
     }
     .landscaping-services{
         width: 400px;
