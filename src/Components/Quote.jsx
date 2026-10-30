@@ -146,8 +146,9 @@ export default function Quote() {
                     />
                 </div>
                 <div className="form-class">
+                    <label htmlFor="subject">Select a Service*</label>
                     <select id='subject' name='subject' value={formData.subject} onChange={handleChange} required>
-                    <option value='' disabled >Select a Service*</option>
+                    {/*<option value='' disabled >Select a Service*</option> */}                    
                     <option value='Yard Maintenance'>Yard Maintenance</option>
                     <option value='Fencing'>Fencing</option>
                     <option value='Irrigation Systems'>Irrigation Systems</option>
@@ -158,7 +159,7 @@ export default function Quote() {
                     <option value='Other'>Other</option>
 
                     </select>
-                    <h4> *Free quotes only in the Bay Area CA all other locations subject to a fee depending on location</h4> 
+                    <h3> *Free quotes only in the Bay Area CA all other locations subject to a fee depending on location</h3> 
 
                 </div>
                 </div>

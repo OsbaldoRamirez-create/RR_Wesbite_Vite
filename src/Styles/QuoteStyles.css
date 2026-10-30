@@ -5,8 +5,8 @@
 }
 .quote-container h1{
     font-size: 50px;
-    color: #2e4b2e;
-    font-family: Georgia, serif
+    color: #2E4B2E;
+    font-family: Georgia, serif;
 }
 
 #landscaping-form {
@@ -24,11 +24,11 @@
     width: 100%;
     
 }
-.input-container h4 {
+.input-container h3 {
     color: white;
     text-align: left;
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .btn-container{
@@ -39,7 +39,7 @@
 }
 .btn-container button{
     width: 150px;
-    background-color: #2e4b2e;
+    background-color: #2E4B2E;
     border: none;
     color: white;
     border-radius: 5px;
@@ -64,15 +64,13 @@
     border-color: transparent;
     background-color: lightgray;
 }
-
-.recaptcha{
-    flex: 1 1 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.form-class label{
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 18px;
 }
-
 .input-error{
     border-color: red !important;
 }
@@ -87,6 +85,13 @@
 .form-class input::placeholder, .form-class textarea::placeholder {
     font-size: 15px;
     color: rgb(75, 74, 74);
+}
+.recaptcha{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -110,7 +115,7 @@ textarea {
 
 @media(max-width:640px){
     .quote-container h1{
-        font-size: 30px;
+        font-size: 35px;
     }
 }
 
