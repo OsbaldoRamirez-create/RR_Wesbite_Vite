@@ -2,12 +2,13 @@
 .gallery-outer{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
 
 .gallery-container {
     display: grid;
-    width: 100%;
+    color: black;
     max-width: 1300px;
     margin: 0 auto;
     box-sizing: border-box; /* ensure padding doesn't exceed max-width */
@@ -21,11 +22,10 @@
     text-align: center;
 }
 
-
 .filter-buttons{
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin-bottom: 20px;
 }
 .filter-buttons button{
     background-color: #f0f0f0;
@@ -51,14 +51,14 @@
 
 .image-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     justify-items: center;
     align-items: center;
 }
 .image-grid img{
     width: 100%;
-    height: 100%;
+    height: 220px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -93,8 +93,8 @@
 .page-number.active{
     background-color: #447144;
     color: white;
-    border-color: white;
 }
+
 
 
 /* modal / lightbox styles */
@@ -109,16 +109,15 @@
 }
 .gallery-modal{
     position: relative;
-    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .gallery-modal img{ 
+    width: 1000px;
+    height: 600px;
     border-radius:6px; 
     display:block; 
-    width:1000px;
-    height:600px;
 }
 
 .modal-close{
@@ -138,6 +137,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    color: dodgerblue;
 }
 
 .modal-prev, .modal-next{ 
@@ -154,6 +154,7 @@
     display:flex; 
     align-items:flex-start; 
     justify-content:center; 
+    color: dodgerblue;
 }
 
 .modal-prev{ 
@@ -165,50 +166,62 @@
 
 .modal-next:hover, .modal-prev:hover, .modal-close:hover {
     background: #969696;
-    color: green;
+    color: #447144;
 }
 
-@media(max-width:800px){
-  .modal-prev{ left: 8px }
-  .modal-next{ right: 8px }
-}
+/* Responsive adjustments */
 
+@media screen and (max-width: 1600px){
 
-@media(max-width:1600px){
-    
-    .image-grid{ 
-        grid-template-columns: repeat(4, 1fr) 
-    }
-}
-@media(max-width:880px){
-    .image-grid{ 
-        grid-template-columns: repeat(3, 1fr) 
-    }
+    .image-grid{ grid-template-columns: repeat(4, 1fr) }
+
     .image-grid img{
         width: 100%;
         height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
     }
-    .gallery-modal img{
-        width: 500px;
-        height: auto;
-    }
+    
 }
-@media(max-width:650px){
-    .ramirezLogo{
-        width:300px;
-    }
-    .filter-buttons{
+
+@media(max-width:880px){
+     .filter-buttons{
         flex-wrap: wrap;
     }
     .filter-buttons button{
         margin-bottom: 10px;
     }
     .image-grid{ 
-        grid-template-columns: repeat(2, 1fr) 
+        grid-template-columns: repeat(3, 1fr) 
     }
+    
+    .pagination button{
+        margin-bottom: 10px;
+    }
+
     .gallery-modal img{
         width: 100%;
         height: auto;
+    }
+    .modal-next, .modal-prev{ 
+        width:55px; 
+        height:60px; 
+        font-size:55px;
+        /* Optionally, adjust line-height or padding for vertical centering */
+        line-height: 50px;
+        padding: 0;
+    }
+    .modal-next{ 
+        right: 0px;
+    }
+    .modal-prev{ 
+        left: 0px;
+    }
+}
+
+@media(max-width:768px){
+    .image-grid{ 
+        grid-template-columns: repeat(2, 1fr) 
     }
 }
 
@@ -220,15 +233,38 @@
         margin-bottom: 10px;
     }
     .image-grid{ 
-        grid-template-columns: repeat(2, 1fr) 
+        
+        grid-template-columns: repeat(2, 1fr);
     }
-    .gallery-modal img{
-        width:100%;
-        height:auto;
+    .image-grid img{
+        height: 180px;
+    }
+    .modal-next, .modal-prev{ 
+        width:20px; 
+        height:60px; 
+        font-size:40px; 
+    }
+    .modal-next{ 
+        right: 0px;
+    }
+    .modal-prev{ 
+        left: 0px;
     }
 }
- 
+
 @media(max-width:360px){
+
+    .filter-buttons{
+        flex-wrap: wrap;
+    }
+    .filter-buttons button{
+        margin-bottom: 10px;
+    }
     .image-grid{ 
-        grid-template-columns: repeat(2, 1fr) }
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-grid img{
+        width: 100%;
+        height: 150px;
+    }
 }
