@@ -11,7 +11,6 @@ import MaintenancePage from './Pages/Maintenance.jsx'
 import ContactPage from './Pages/Contact.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import ScrollToTop from './Components/ScrollToTop.jsx'
-import RamirezLogo from './assets/RR_Logo.png' 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,8 +19,13 @@ createRoot(document.getElementById('root')).render(
       <div className="app-container">
       <Navbar />
       
-      <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
-
+     <img src="/RR_Logo.webp" 
+      alt='Ramirez Logo' 
+      className='ramirezLogo'
+      width={400}
+      height={300}
+      fetchPriority="high"
+      />
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/landscaping" element={<Landscaping/>} />
